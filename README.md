@@ -18,3 +18,5 @@ The main package managers used in this documentation are:
 
 ### Homebrew Applications
 - **bat** - A cat clone with syntax highlighting
+- **copilot** - GitHub Copilot CLI
+- **gh** - GitHub CLI
