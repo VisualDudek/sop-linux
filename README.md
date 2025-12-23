@@ -10,6 +10,14 @@ gsettings set org.gnome.desktop.default-applications.terminal exec 'ghostty'
 gsettings set org.gnome.desktop.default-applications.terminal exec-arg ''
 ```
 
+## Text Editor
+The recommended text editor is **Neovim**.
+
+Install Neovim via Homebrew:
+```sh
+brew install neovim
+```
+
 ## Package Managers
 The main package managers used in this documentation are:
 - **apt** - Advanced Package Tool (Debian/Ubuntu)
