@@ -19,8 +19,30 @@ The main package managers used in this documentation are:
 ### Homebrew Applications
 - **bat** - A cat clone with syntax highlighting
 - **copilot** - GitHub Copilot CLI
+- **fzf** - Command-line fuzzy finder
 - **gh** - GitHub CLI
 - **yazi** - Blazing fast terminal file manager
+
+## CLI AI Agents
+The recommended CLI AI agent is **Claude Code**.
+
+Claude Code is Anthropic's official CLI tool that provides an interactive AI assistant for software engineering tasks, code analysis, and development workflows directly in your terminal.
+
+## Shell Configuration
+
+### fzf Integration with Zsh
+**fzf** provides fuzzy finding capabilities for command history, file navigation, and more.
+
+After installing fzf via Homebrew, enable zsh integration by adding to `~/.zshrc`:
+```sh
+# Enable fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+```
+
+**Key bindings:**
+- `Ctrl+R` - Search command history
+- `Ctrl+T` - Search files and directories
+- `Alt+C` - Change directory using fuzzy search
 
 ## Tips
 
