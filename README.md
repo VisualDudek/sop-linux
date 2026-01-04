@@ -1,5 +1,22 @@
-# sop-linux
+# SOP-linux TOC
+<!-- mtoc-start -->
 
+* [Terminal](#terminal)
+* [Text Editor](#text-editor)
+* [Package Managers](#package-managers)
+  * [Homebrew Applications](#homebrew-applications)
+* [CLI AI Agents](#cli-ai-agents)
+* [Shell Configuration](#shell-configuration)
+  * [fzf Integration with Zsh](#fzf-integration-with-zsh)
+* [Yazi File Manager](#yazi-file-manager)
+* [Backup](#backup)
+  * [tips with `systemctl` unit files](#tips-with-systemctl-unit-files)
+  * [tips with `journalctl`](#tips-with-journalctl)
+* [Tips](#tips)
+  * [Find which package provides a file](#find-which-package-provides-a-file)
+  * [List installed packages](#list-installed-packages)
+
+<!-- mtoc-end -->
 Standard Operation Procedure framework for Linux.
 
 ## Terminal
@@ -27,18 +44,18 @@ brew install neovim
 
 The main package managers used in this documentation are:
 
-- **apt** - Advanced Package Tool (Debian/Ubuntu)
-- **brew** - Homebrew package manager
-- **snap** - Snap package manager (cross-distribution)
+* **apt** - Advanced Package Tool (Debian/Ubuntu)
+* **brew** - Homebrew package manager
+* **snap** - Snap package manager (cross-distribution)
 
 ### Homebrew Applications
 
-- **bat** - A cat clone with syntax highlighting
-- **copilot** - GitHub Copilot CLI
-- **fzf** - Command-line fuzzy finder
-- **gh** - GitHub CLI
-- **yazi** - Blazing fast terminal file manager
-- ripgrep - alias `rg`
+* **bat** - A cat clone with syntax highlighting
+* **copilot** - GitHub Copilot CLI
+* **fzf** - Command-line fuzzy finder
+* **gh** - GitHub CLI
+* **yazi** - Blazing fast terminal file manager
+* ripgrep - alias `rg`
 
 ## CLI AI Agents
 
@@ -61,9 +78,9 @@ source <(fzf --zsh)
 
 **Key bindings:**
 
-- `Ctrl+R` - Search command history
-- `Ctrl+T` - Search files and directories
-- `Alt+C` - Change directory using fuzzy search
+* `Ctrl+R` - Search command history
+* `Ctrl+T` - Search files and directories
+* `Alt+C` - Change directory using fuzzy search
 
 ## Yazi File Manager
 
@@ -133,9 +150,9 @@ dpkg -S "$(command -v gh)"
 
 **Why `command -v` over `which`?**
 
-- `command -v` is a POSIX-standard shell builtin, making it faster and more portable
-- `which` is an external program that may not be installed or may behave differently across systems
-- `command -v` respects shell aliases and functions, providing more accurate results
+* `command -v` is a POSIX-standard shell builtin, making it faster and more portable
+* `which` is an external program that may not be installed or may behave differently across systems
+* `command -v` respects shell aliases and functions, providing more accurate results
 
 ### List installed packages
 
