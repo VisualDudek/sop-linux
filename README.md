@@ -82,6 +82,22 @@ systemctl --user status mybackup.timer
 systemctl --user daemon-reload
 ``` 
 
+### tips with `journalctl`
+By default, `journalctl` shows logs in **pager** mode (by default `less`). To view logs without pagination, use the `--no-pager` option.
+
+Example usage:
+```sh
+# tail-like behavior to follow logs in real-time
+journalctl -f 
+
+# jump to the end of the logs
+journalctl -e
+```
+There are **journal fields** that can help filter logs for specific command name or PID.
+```sh
+journalctl _COMM=borg
+```
+
 ## Tips
 
 ### Find which package provides a file
