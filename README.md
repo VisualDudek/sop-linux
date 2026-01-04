@@ -52,6 +52,14 @@ source <(fzf --zsh)
 - `Ctrl+T` - Search files and directories
 - `Alt+C` - Change directory using fuzzy search
 
+## Yazi File Manager
+`t` open a new tab
+`[ / ]` navigate between tabs
+`z` jump to a file/dir via fzf
+`Z` jump to dir via zoxide
+`gh` go home
+`gc` go config dir
+
 ## Backup
 Use Borg. Automate backups with systemd timers and borg docs bash script `dobackup.sh`.
 `*.service` and `*.timer` files are in the `~/.config/systemd/user/` folder.
