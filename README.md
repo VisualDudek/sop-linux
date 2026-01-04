@@ -64,6 +64,16 @@ borg info
 borg list
 ```
 
+### tips with `systemctl` unit files
+To manage user-level systemd services and timers, use the `--user` flag with `systemctl`. For example:
+```sh
+systemctl --user list-timers
+systemctl --user status mybackup.timer
+
+# Reload user systemd units after making changes
+systemctl --user daemon-reload
+``` 
+
 ## Tips
 
 ### Find which package provides a file
