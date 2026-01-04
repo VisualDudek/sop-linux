@@ -52,6 +52,18 @@ source <(fzf --zsh)
 - `Ctrl+T` - Search files and directories
 - `Alt+C` - Change directory using fuzzy search
 
+## Backup
+Use Borg. Automate backups with systemd timers and borg docs bash script `dobackup.sh`.
+`*.service` and `*.timer` files are in the `~/.config/systemd/user/` folder.
+
+check example cnf files [here](./borg-cnf/)
+
+usage:
+```sh
+borg info
+borg list
+```
+
 ## Tips
 
 ### Find which package provides a file

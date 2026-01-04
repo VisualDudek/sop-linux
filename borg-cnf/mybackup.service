@@ -1,0 +1,8 @@
+[Unit]
+Description=My daily backup script
+
+[Service]
+ExecStart=/home/m/.config/systemd/user/dobackup.sh
+
+[Install]
+WantedBy=multi-user.target
