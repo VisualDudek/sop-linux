@@ -73,6 +73,7 @@ source <(fzf --zsh)
 `Z` jump to dir via zoxide
 `gh` go home
 `gc` go config dir
+`<leader>sB` grep open buffers
 
 ## Backup
 
