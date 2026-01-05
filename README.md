@@ -7,7 +7,7 @@
 * [Package Managers](#package-managers)
   * [Homebrew Applications](#homebrew-applications)
 * [CLI AI Agents](#cli-ai-agents)
-* [Shell Configuration](#shell-configuration)
+* [Shell Configuration USE ZSH-omz](#shell-configuration-use-zsh-omz)
   * [fzf Integration with Zsh](#fzf-integration-with-zsh)
 * [Yazi File Manager](#yazi-file-manager)
 * [Backup](#backup)
@@ -64,10 +64,29 @@ The main package managers used in this documentation are:
 The recommended CLI AI agent is **Claude Code**.
 Claude Code is Anthropic's official CLI tool that provides an interactive AI assistant for software engineering tasks, code analysis, and development workflows directly in your terminal.
 
-## Shell Configuration
+## Shell Configuration USE ZSH-omz
 
 Navigation using `zoxide`:
 `z foo<SPACE><TAB> # show interactive completion`
+
+Based on `robyrussel` custom prompt adding number of jobs in background if any
+
+```sh
+# Define the jobs indicator: shows only if jobs > 0
+# %j is the number of jobs, %1(j.X.Y) is a conditional: if jobs >= 1, show X, else Y.
+# %(1j.true.false): This is a Zsh ternary expression. It checks if there is at least 1 job (j).
+PROMPT_JOBS='%(1j.%{$fg[yellow]%}⚙ %j %{$reset_color%}. )'
+
+PROMPT="%(?:%{$fg_bold[green]%}%1{➜%} :%{$fg_bold[red]%}%1{➜%} )"
+PROMPT+="${PROMPT_JOBS}"
+PROMPT+="%{$fg[cyan]%}%c%{$reset_color%}"
+PROMPT+=' $(git_prompt_info)'
+
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}git:(%{$fg[red]%}"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}%1{✗%}"
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
+```
 
 ### fzf Integration with Zsh
 
