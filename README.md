@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD013 -->
 # SOP-linux TOC
 <!-- mtoc-start -->
 
@@ -56,14 +57,17 @@ The main package managers used in this documentation are:
 * **gh** - GitHub CLI
 * **yazi** - Blazing fast terminal file manager
 * ripgrep - alias `rg`
+* **zoxide** - alias `z`
 
 ## CLI AI Agents
 
 The recommended CLI AI agent is **Claude Code**.
-
 Claude Code is Anthropic's official CLI tool that provides an interactive AI assistant for software engineering tasks, code analysis, and development workflows directly in your terminal.
 
 ## Shell Configuration
+
+Navigation using `zoxide`:
+`z foo<SPACE><TAB> # show interactive completion`
 
 ### fzf Integration with Zsh
 
