@@ -1,16 +1,18 @@
-<!-- markdownlint-disable MD013 -->
+<!-- markjkdownlint-disable MD013 -->
 # SOP-linux TOC
 <!-- mtoc-start -->
 
 * [Terminal](#terminal)
 * [Text Editor](#text-editor)
+  * [Neovim Keymap](#neovim-keymap)
 * [Package Managers](#package-managers)
   * [Homebrew Applications](#homebrew-applications)
+* [Git & GitHub](#git--github)
 * [CLI AI Agents](#cli-ai-agents)
 * [Shell Configuration USE ZSH-omz](#shell-configuration-use-zsh-omz)
   * [fzf Integration with Zsh](#fzf-integration-with-zsh)
 * [Yazi File Manager](#yazi-file-manager)
-* [Backup](#backup)
+* [Backup, use Borg](#backup-use-borg)
   * [tips with `systemctl` unit files](#tips-with-systemctl-unit-files)
   * [tips with `journalctl`](#tips-with-journalctl)
 * [Tips](#tips)
@@ -41,6 +43,10 @@ Install Neovim via Homebrew:
 brew install neovim
 ```
 
+### Neovim Keymap
+
+* search current buffer lines `<leader>sb`
+
 ## Package Managers
 
 The main package managers used in this documentation are:
@@ -58,6 +64,11 @@ The main package managers used in this documentation are:
 * **yazi** - Blazing fast terminal file manager
 * ripgrep - alias `rg`
 * **zoxide** - alias `z`
+
+## Git & GitHub
+
+* zsh alias `gd = git diff`
+* git diff for specific file, working tree vs last commit `git diff file1 ...`
 
 ## CLI AI Agents
 
@@ -115,7 +126,7 @@ source <(fzf --zsh)
 `gc` go config dir
 `<leader>sB` grep open buffers
 
-## Backup
+## Backup, use Borg
 
 Use Borg. Automate backups with systemd timers and borg docs bash script `dobackup.sh`.
 `*.service` and `*.timer` files are in the `~/.config/systemd/user/` folder.
