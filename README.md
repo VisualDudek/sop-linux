@@ -68,6 +68,8 @@ The main package managers used in this documentation are:
 ## Git & GitHub
 
 * zsh alias `gd = git diff`
+* zsh alias push `gp = git push`
+* zsh alias pull `gl = git pull`
 * git diff for specific file, working tree vs last commit `git diff file1 ...`
 
 ## CLI AI Agents
