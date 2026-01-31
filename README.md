@@ -8,6 +8,7 @@
 * [Package Managers](#package-managers)
   * [Homebrew Applications](#homebrew-applications)
 * [Git & GitHub](#git--github)
+  * [GitHub CLI](#github-cli)
 * [CLI AI Agents](#cli-ai-agents)
 * [Shell Configuration USE ZSH-omz](#shell-configuration-use-zsh-omz)
   * [fzf Integration with Zsh](#fzf-integration-with-zsh)
@@ -46,6 +47,7 @@ brew install neovim
 ### Neovim Keymap
 
 * search current buffer lines `<leader>sb`
+* disable spelling `<leader>us`
 
 ## Package Managers
 
@@ -71,6 +73,10 @@ The main package managers used in this documentation are:
 * zsh alias push `gp = git push`
 * zsh alias pull `gl = git pull`
 * git diff for specific file, working tree vs last commit `git diff file1 ...`
+
+### GitHub CLI
+
+* Open PRs on your repositories 'gh search prs is:open user:@me'
 
 ## CLI AI Agents
 
